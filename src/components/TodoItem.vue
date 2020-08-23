@@ -1,5 +1,5 @@
 <template>
-  <div class="todo-item">
+  <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
     <p>{{todo.title}}</p>
   </div>
 </template>
@@ -16,5 +16,8 @@ export default {
   background: lightgray;
   padding: 10px;
   border-bottom: 1px solid white;
+}
+.is-complete {
+  text-decoration: line-through;
 }
 </style>
