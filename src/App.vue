@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <AddTodo />
     <Todos v-bind:todos="todos" v-on:delete-todo="deleteTodo" />
   </div>
 </template>
@@ -8,9 +9,11 @@
 <script>
 import Header from "./components/layout/Header"
 import Todos from "./components/Todos";
+import AddTodo from "./components/AddTodo"
+
 export default {
   name: "App",
-  components: { Header, Todos },
+  components: { Header, Todos, AddTodo },
   data() {
     return {
       todos: [
@@ -41,6 +44,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
-  padding: 50px 300px;
+  padding: 50px 400px;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 50px 100px;
+  }
 }
 </style>
