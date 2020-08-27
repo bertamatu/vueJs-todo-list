@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <AddTodo />
+    <AddTodo  v-on:add-todo="addTodo" />
     <Todos v-bind:todos="todos" v-on:delete-todo="deleteTodo" />
   </div>
 </template>
@@ -45,6 +45,14 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   padding: 50px 400px;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: white;
+  padding: 7px 20px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   body {

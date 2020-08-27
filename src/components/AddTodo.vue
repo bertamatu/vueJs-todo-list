@@ -1,16 +1,35 @@
 <template>
     <div>
-        <form>
-            <input type="text" name="title" placeholder="Add todo...">
-            <input type="button" value="Submit" class="btn">
+        <form @submit="addTodo">         <!-- $emit wasnt used to constract todo first-->
+            <input type="text" v-model="title" name="title" placeholder="Add todo...">
+            <input type="submit" value="Submit" class="btn">
         </form>
     </div>
 </template>
 
 <script>
-export default {
-    name: "AddTodo"
-}
+    import {v4 as uuid} from 'uuid';
+
+    export default {
+        name: "AddTodo",
+        data(){
+            return {
+                title: ""
+            }
+        },
+        methods: {
+            addTodo(e){
+                e.preventDefault();
+                const newTodo = {
+                    id: uuid(),
+                    title: this.title,
+                    completed: false
+                }
+                // send up to parent
+                this.$emit('add-todo', newTodo)
+            }
+        }
+    }
 </script>
 
 <style scoped>
