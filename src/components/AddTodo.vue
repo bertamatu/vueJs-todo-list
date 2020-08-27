@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import {v4 as uuid} from 'uuid';
+    // import {v4 as uuid} from 'uuid';
 
     export default {
         name: "AddTodo",
@@ -21,7 +21,7 @@
             addTodo(e){
                 e.preventDefault();
                 const newTodo = {
-                    id: uuid(),
+                    // id: uuid(),
                     title: this.title,
                     completed: false
                 }
