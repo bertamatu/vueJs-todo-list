@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form @submit="addTodo">         <!-- $emit wasnt used to constract todo first-->
+        <form @submit="addTodo">  <!-- $emit wasnt used in order to constract todo first-->
             <input type="text" v-model="title" name="title" placeholder="Add todo...">
             <input type="submit" value="Submit" class="btn">
         </form>
@@ -9,7 +9,6 @@
 
 <script>
     // import {v4 as uuid} from 'uuid';
-
     export default {
         name: "AddTodo",
         data(){
@@ -34,16 +33,14 @@
 </script>
 
 <style scoped>
-form {
-    display: flex;
-}
-input[type="text"] {
-    flex: 10;
-    padding: 5px;
-}
-
-input[type="submit"] {
-    flex:2
-}
-
+    form {
+        display: flex;
+    }
+    input[type="text"] {
+        flex: 10;
+        padding: 5px;
+    }
+    input[type="submit"] {
+        flex:2
+    }
 </style>

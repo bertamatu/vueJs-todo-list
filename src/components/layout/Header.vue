@@ -1,6 +1,10 @@
 <template>
     <header class="header">
-<h1>TODO LIST</h1>
+<h1>TEST LIST</h1>
+    <div>
+        <router-link class="link" to='/'>HOME</router-link> | 
+        <router-link class="link" to='/about'>ABOUT</router-link>
+    </div>
     </header>
 </template>
 
@@ -16,10 +20,11 @@ export default {
         color: white;
         text-align: center;
         padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
-    .header a {
+    .link {
+        font-size: 0.7rem;
         color: white;
-        padding-right: 5px;
-    }
+        text-decoration: none;
+    } 
 </style>
