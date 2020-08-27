@@ -43,28 +43,28 @@ export default {
 </script>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.4;
-  padding: 50px 400px;
-}
-.btn {
-  display: inline-block;
-  border: none;
-  background: #555;
-  color: white;
-  padding: 7px 20px;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  body {
-    padding: 50px 100px;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-}
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.4;
+    padding: 50px 400px;
+  }
+  .btn {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: white;
+    padding: 7px 20px;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    body {
+      padding: 50px 100px;
+    }
+  }
 </style>

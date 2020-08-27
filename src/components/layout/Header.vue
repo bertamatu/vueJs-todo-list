@@ -17,7 +17,6 @@ export default {
         text-align: center;
         padding: 10px;
     }
-
     .header a {
         color: white;
         padding-right: 5px;

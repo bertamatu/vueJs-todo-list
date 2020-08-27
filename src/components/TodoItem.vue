@@ -21,23 +21,23 @@ export default {
 </script>
 
 <style scoped>
-.todo-item {
-  background: lightgray;
-  padding: 10px;
-  border-bottom: 1px solid white;
-  font-size: 0.7rem;
-}
-.is-complete {
-  text-decoration: line-through;
-}
-.delete {
-  background: red;
-  color: white;
-  border: none;
-  padding: 5px 9px;
-  border-radius: 50%;
-  cursor: pointer;
-  float: right;
-  font-weight: bold;
-}
+  .todo-item {
+    background: lightgray;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    font-size: 0.7rem;
+  }
+  .is-complete {
+    text-decoration: line-through;
+  }
+  .delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+  }
 </style>
